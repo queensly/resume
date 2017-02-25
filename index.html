@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="css/reset.min.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script>
+        (function () {
+            var desW = document.documentElement.clientWidth;
+            document.documentElement.style.fontSize = desW/640*100+'px';
+        })();
+    </script>
+</head>
+<body>
+<article class="main">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide1">
+                <img src="img/o_1amb5pie41med17hgbqvu81afi1g.png" alt=""/>
+                <img src="img/o_1amb72c5sppv1r0re3e1ml61ba723.png" alt=""/>
+                <img src="img/o_1amb5pbgh12e01d24ucbrai11lb14.png" alt=""/>
+                <img src="img/o_1amb5pbgivrv761lip1m881b3715.png" alt=""/>
+                <img src="img/o_1aipf2rofdi86ba1tjq14en1e1hm.png" alt=""/>
+                <img src="img/o_1aipf2rof1t8u1jd516315itkdjl.png" alt=""/>
+                <img src="img/o_1aipf2roe1jp519b9i491jiv9kk.png" alt=""/>
+                <img src="img/o_1aipf2rod1cpicgt19u2tci1pagj.png" alt=""/>
+                <div></div>
+            </div>
+            <div class="swiper-slide slide2">
+                <img src="img/o_1anh311uepd61n03lfn1bh21m4sh.png" alt=""/>
+                <img src="img/o_1anh311uegua1fc881i1hg5sfag.png" alt=""/>
+                <img src="img/20160610220555_ikyVN.thumb.700_0.jpeg" alt=""/>
+                <div>基 本 信 息</div>
+                <p>essential information</p>
+                <p>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名 : &nbsp;&nbsp;李雅雅</p>
+                <p>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别 : &nbsp;&nbsp;女</p>
+                <p>年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龄 : &nbsp;&nbsp;25</p>
+                <p>学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;历 : &nbsp;&nbsp;大专</p>
+                <p>电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话 : &nbsp;&nbsp;15566769815</p>
+                <p>求职意向 : &nbsp;&nbsp;web前端工程师</p>
+            </div>
+            <div class="swiper-slide slide3">
+                <p>工作经历</p>
+                <p>work experience</p>
+                <img src="img/o_1anh311uegua1fc881i1hg5sfag.png" alt=""/>
+                <div></div>
+                <p>1122233</p>
+                <p>shjadsccdd</p>
+                <div></div>
+                <p>1122233</p>
+                <p>shjadsccdd</p>
+                <div></div>
+                <p>1122233</p>
+                <p>ergghjjj</p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <div></div>
+                <p>12334</p>
+                <p>weffghj</p>
+            </div>
+            <div class="swiper-slide slide4">
+                <span></span>
+                <span></span>
+                <span>掌握技能</span>
+                <span>master the skills</span>
+                <div>html css :</div>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div>javascript :</div>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div>jquery :</div>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div>css3 h5 :</div>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div>angular react :</div>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div>webpack :</div>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="swiper-slide slide5">
+                <i></i>
+                <i></i>
+                <i>自我评价</i>
+                <i>self-assessment</i>
+                <p>开朗</p>
+                <p>热心</p>
+                <p>执行力</p>
+                <p>能吃苦</p>
+                <p>成熟</p>
+            </div>
+            <div class="swiper-slide slide6">
+                <p></p>
+                <p></p>
+                <p>联系方式</p>
+                <p>contact information</p>
+                <div>李雅雅</div>
+                <div>tel : 15566769815</div>
+                <div>email : 996657372@qq.com</div>
+            </div>
+        </div>
+    </div>
+</article>
+<script src="js/swiper.min.js"></script>
+<script>
+    var a = new Swiper('.swiper-container',{
+        direction:'vertical',
+        loop:true,
+        onTransitionEnd:function(swiper){
+            var curIndex = swiper.activeIndex;
+            var slides = swiper.slides;
+            [].forEach.call(slides,function(item,index){
+                item.id='';
+                if(index==curIndex){
+                    if(index==0){
+                        slides[curIndex].id='page'+(slides.length-2);
+                    }else if(index==slides.length-1){
+                        slides[curIndex].id='page1';
+                    }else{
+                        slides[curIndex].id='page'+curIndex;
+                    }
+                }
+            });
+        }
+    });
+</script>
+</body>
+</html>
